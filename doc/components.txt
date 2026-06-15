@@ -1,0 +1,51 @@
+----
+I2C OLED  screen (3.3V)
+Treiber-IC: SSD1306
+OLED-Resolution: 128 x 32
+----
+NORMAL
+----
+SDO(MISO)
+SDA
+SCK
+VCC
+GND
+----
+SD CARD TF card reader SPI (3.3V)
+----
+CS
+SCK
+MOSI
+MISO
+VCC
+GND
+----
+DFPlayer Mini MP3 Player Modul (5V)
+----
+VCC
+RX
+TX
+DAC_R
+DAC_I
+SPK_1
+GND
+SPK_2
+BUSY
+USB -
+USB +
+ADKEY_2
+ADKEY_1
+IO_2
+GND
+IO_1
+----
+Basic Speaker
+----
+Speaker+
+Speaker-
+----
+SD Cards
+----
+2x 512 MB TF Card Class 10 U3
+----
+
