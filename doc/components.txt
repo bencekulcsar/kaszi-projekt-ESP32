@@ -1,3 +1,6 @@
+MCU:
+ESP32 S3
+PINS and INFO: esp32.png
 ----
 I2C OLED  screen (3.3V)
 Treiber-IC: SSD1306
