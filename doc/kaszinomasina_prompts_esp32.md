@@ -12,6 +12,7 @@
 - **Avoid/reserved pins:** GPIO0, GPIO19, GPIO20, GPIO35–GPIO48 unless explicitly needed. GPIO19/GPIO20 are USB pins. GPIO0 is boot/strapping.
 - **Sound SD card:** Still inside the DFPlayer. Folder structure and MP3 files remain unchanged.
 - **Picture SD folder:** `/sd/maps/` contains 128×32 24-bit BMP files: `tanariss.bmp` and `ungoroo.bmp`.
+-USE THIS REPO and its tools: https://github.com/espressif/esp-idf
 
 ---
 
