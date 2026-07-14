@@ -2,17 +2,45 @@ MCU:
 ESP32 S3
 PINS and INFO: esp32.png
 ----
-I2C OLED  screen (3.3V)
-Treiber-IC: SSD1306
-OLED-Resolution: 128 x 32
+3,97-Zoll TFT LCD-Display 480x800 Resolution ST7701 Treiber-IC IPS (3.3V)
+IPS-Resolution: 480x800
 ----
-NORMAL
-----
-SDO(MISO)
-SDA
-SCK
-VCC
-GND
+PIN 1  -- BL
+PIN 2  -- GND
+PIN 3  -- RST
+PIN 4  -- CS
+PIN 5  -- CLK
+PIN 6  -- DE
+PIN 7  -- HS
+PIN 8  -- VS
+PIN 9  -- B6
+PIN 10 -- B7
+PIN 11 -- B4
+PIN 12 -- B5
+PIN 13 -- B2
+PIN 14 -- B3
+PIN 15 -- B0
+PIN 16 -- B1
+PIN 17 -- G6
+PIN 18 -- G7
+PIN 19 -- G4
+PIN 20 -- G5
+PIN 21 -- G2
+PIN 22 -- G3
+PIN 23 -- G0
+PIN 24 -- G1
+PIN 25 -- R6
+PIN 26 -- R7
+PIN 27 -- R4
+PIN 28 -- R5
+PIN 29 -- R2
+PIN 30 -- R3
+PIN 31 -- R0
+PIN 32 -- R1
+PIN 33 -- SDA
+PIN 34 -- SCL
+PIN 35 -- VCC
+PIN 36 -- GND
 ----
 SD CARD TF card reader SPI (3.3V)
 ----
