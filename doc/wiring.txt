@@ -1,0 +1,84 @@
+====================================================
+KASZINOMASINA - ESP32-S3 (N16R8) WIRING PLAN
+====================================================
+
+------------------------------------------------------
+DISPLAY - 3.97" ST7701 480x800 (GMT397-01), 36-pin FPC
+------------------------------------------------------
+
+Pin  Signal   Connects to
+---  ------   -----------
+ 1   BL       GPIO46
+ 2   GND      GND
+ 3   RST      GPIO3
+ 4   CS       GPIO36
+ 5   CLK      GPIO18
+ 6   DE       GPIO21
+ 7   HS       GPIO19
+ 8   VS       GPIO20
+ 9   B6       GPIO14
+10   B7       GPIO13
+11   B4       GPIO16
+12   B5       GPIO15
+13   B2       GND
+14   B3       GPIO17
+15   B0       GND
+16   B1       GND
+17   G6       GPIO8
+18   G7       GPIO7
+19   G4       GPIO10
+20   G5       GPIO9
+21   G2       GPIO12
+22   G3       GPIO11
+23   G0       GND
+24   G1       GND
+25   R6       GPIO2
+26   R7       GPIO1
+27   R4       GPIO5
+28   R5       GPIO4
+29   R2       GND
+30   R3       GPIO6
+31   R0       GND
+32   R1       GND
+33   SDA      GPIO38   (shared bus with SD reader MOSI)
+34   SCL      GPIO37   (shared bus with SD reader SCK)
+35   VCC      3V3
+36   GND      GND
+
+------------------------------------------------------
+SD CARD READER (SPI)
+------------------------------------------------------
+
+Signal        Connects to
+------        -----------
+CS            GPIO39
+SCK / CLK     GPIO37   (shared with display SCL)
+MOSI          GPIO38   (shared with display SDA)
+MISO          GPIO42
+VCC / 3V      3V3
+GND           GND
+
+------------------------------------------------------
+DFPLAYER MINI + SPEAKER
+------------------------------------------------------
+
+Signal        Connects to
+------        -----------
+VCC           5V
+RX            GPIO47   (through 1kOhm resistor)
+TX            GPIO48
+GND           GND
+SPK_1         Speaker +
+SPK_2         Speaker -
+
+------------------------------------------------------
+NOTES
+------------------------------------------------------
+- Display and SD reader share the same physical SCK/MOSI
+  bus (GPIO37/GPIO38), separated by their own CS lines
+  (display CS = GPIO36, SD CS = GPIO39). Only one device
+  is selected at a time, so this is safe.
+- GPIO0, GPIO43, GPIO44, GPIO45 are intentionally left
+  free (boot-strapping / USB-serial debug pins).
+- All GND pins across all components must share a common
+  ground with the ESP32 board.
